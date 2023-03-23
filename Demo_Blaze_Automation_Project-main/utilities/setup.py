@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from pages.cart_page import Cartpage
 from pages.home_page import Homepage
 from pages.contact_page import Contactpage
-from pages.about_us_page import About_As_page
+from pages.about_us_page import About_us_page
 from pages.login_page import LoginPage
 from pages.sign_up_page import Sign_Up_Page
 from selenium.webdriver.chrome.options import Options
@@ -27,7 +27,7 @@ class WebDriverSetup(unittest.TestCase):
             self.login_page = LoginPage(self.driver)
             self.home_page = Homepage(self.driver)
             self.contact_page = Contactpage(self.driver)
-            self.about_us_page = About_As_page(self.driver)
+            self.about_us_page = About_us_page(self.driver)
             self.cart_page = Cartpage(self.driver)
             self.sign_up_page = Sign_Up_Page(self.driver)
             self.product_page = Product(self.driver)
