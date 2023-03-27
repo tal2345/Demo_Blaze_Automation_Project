@@ -57,6 +57,7 @@ class TestOH(WebDriverSetup):
         self.contact_page.set_name('maya')
         # Enter invalid message more then 256
         x = self.contact_page.forloop_message_invalid()
+        self.contact_page.set_message(x)
         # Click the send message button
         self.contact_page.click_send_message()
         # Alert is displayed
